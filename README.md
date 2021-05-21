@@ -1,1 +1,1 @@
-# autenticazione mediante token JWT - Tavani Daniele, Gatti Matteo
+# Autenticazione mediante token JWT - Tavani Daniele, Gatti Matteo

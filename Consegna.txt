@@ -1,0 +1,12 @@
+21-01 autenticazione mediante  token
+
+Si crei un'applicazione in Node che visualizzi all'interno di una pagine EJS i post effettuati da Jim
+I post effettuati da Jim sono reperibili in formato json interrogando il post server disponibile al seguente url
+
+  GET http://161.97.114.50:3000/posts
+
+per poter accedere post server è necessario autenticarsi richiamando l'authentication server disponibile al seguente URL
+
+   POST http://161.97.114.50:4000/login
+
+Tutti i dettagli di funzionamento dell'authentication server e del post server sono inclusi nel codice allegato nella precedente nota (si veda 21-01)

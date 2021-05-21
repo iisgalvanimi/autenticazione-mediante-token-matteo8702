@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultato della fetch</title>
+    <style>
+        table {
+            border-collapse:collapse;
+            text-align: center;
+            width: 400px;
+            height: 300px;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        td, th {
+            border:1px solid #ddd;
+            padding:8px;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1 style="color:red">Risultato</h1>
+        <% if (risultato=='Accesso non consentito') {%>
+            <h2><%= risultato %></h2>
+        <% } else { %>
+            <% if (risultato!=undefined) {%>
+                <table>
+                    <tr><td><b>Username</b></td><td><b>Titolo POST</b></td></tr>
+                <% for(let i=0;i<risultato.length;i++){%>
+                    <tr><td><%= risultato[i].username %></td><td><%= risultato[i].title %></td></tr>
+                <% } %>
+                </table>
+            <% } %>
+        <% } %>
+        <a href="/">Torna indietro</a>
+    </div>
+</body>
+</html>
